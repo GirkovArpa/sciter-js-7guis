@@ -5,7 +5,7 @@ const slider = $('[type=hslider]');
 const label = $('.wide');
 const progress = $('[type=progress]');
 
-let TEXT = '0.0s / 0s';
+let TEXT = '0.0s / 30s';
 let duration = 0;
 
 slider.addEventListener('change', () => {
