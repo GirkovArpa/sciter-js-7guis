@@ -24,7 +24,9 @@ Run the implementations by placing [scapp.exe](https://github.com/c-smile/sciter
 
 ## CRUD
 
-:construction: Not yet implemented. :construction:
+:construction: Work in progress. :construction:
+
+![screenshot](screenshots/crud.png)
 
 ## Circle Drawer
 
