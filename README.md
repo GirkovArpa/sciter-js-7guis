@@ -6,6 +6,8 @@ Run the implementations by placing [scapp.exe](https://github.com/c-smile/sciter
 _____________
 At the time of this writing, the `x32` version seems to support things the `x64` version does not.  And the *"work in progress"* benchmarks are halted because JavaScript features they require are not yet implemented in SciterJS (`11/2/2020`).
 
+Additionally, some accesses of GUI element attributes appear to not be thread-safe.  Compare the **Timer** approach taken in this SciterJS repo to the more straightforward way of doing things using TIScript [here](https://github.com/GirkovArpa/sciter-7guis).
+
 ## Counter
 
 ![screenshot](screenshots/counter.gif)
