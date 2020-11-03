@@ -2,7 +2,9 @@
 
 [7GUIs](https://eugenkiss.github.io/7guis/tasks) benchmarks implemented in [SciterJS](https://sciter.com).
 
-Run the implementations by placing [scapp.exe](https://github.com/c-smile/sciter-js-sdk/tree/main/bin.win/x64) in this folder and running the appropriate `.bat` file.
+Run the implementations by placing [scapp.exe](https://github.com/c-smile/sciter-js-sdk/tree/main/bin.win/x32) in this folder and running the appropriate `.bat` file.
+
+The x32 version seems to support things the x64 version does not.
 
 ## Counter
 
@@ -30,7 +32,9 @@ Run the implementations by placing [scapp.exe](https://github.com/c-smile/sciter
 
 ## Circle Drawer
 
-:construction: Not yet implemented. :construction:
+:construction: Work in progress. :construction:
+
+![screenshot](screenshots/circle-drawer.png)
 
 ## Cells
 
