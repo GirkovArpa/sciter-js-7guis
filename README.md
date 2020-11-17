@@ -1,12 +1,10 @@
 # SciterJS 7GUIs
 
+:construction: Work in progress.
+
 [7GUIs](https://eugenkiss.github.io/7guis/tasks) benchmarks implemented in [SciterJS](https://sciter.com).
 
 Run the implementations by placing [scapp.exe](https://github.com/c-smile/sciter-js-sdk/tree/main/bin.win/x32) in this folder and running the appropriate `.bat` file.
-_____________
-At the time of this writing, the `x32` version seems to support things the `x64` version does not.  And the *"work in progress"* benchmarks are halted because JavaScript features they require are not yet implemented in SciterJS (`11/2/2020`).
-
-Additionally, some accesses of GUI element attributes appear to not be thread-safe.  Compare the **Timer** approach taken in this SciterJS repo to the more straightforward way of doing things using TIScript [here](https://github.com/GirkovArpa/sciter-7guis).
 
 ## Counter
 
