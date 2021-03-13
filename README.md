@@ -8,15 +8,15 @@ Run the implementations by running [scapp.exe](https://github.com/c-smile/sciter
 
 ## Counter
 
-![screenshot](_screenshots/counter.gif)
+![screenshot](screenshots/counter.gif)
 
 ## Temperature Converter
 
-![screenshot](_screenshots/temperature-converter.gif)
+![screenshot](screenshots/temperature-converter.gif)
 
 ## Flight Booker
 
-![screenshot](_screenshots/flight-booker.gif)
+![screenshot](screenshots/flight-booker.gif)
 
 ## Timer
 
