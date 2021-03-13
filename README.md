@@ -16,11 +16,11 @@ Run the implementations by running [scapp.exe](https://github.com/c-smile/sciter
 
 ## Flight Booker
 
-:construction: Work in progress. :construction:
-
 ![screenshot](screenshots/flight-booker.gif)
 
 ## Timer
+
+:construction: Work in progress. :construction:
 
 ![screenshot](screenshots/timer.gif)
 

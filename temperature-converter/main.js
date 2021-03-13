@@ -1,4 +1,4 @@
-import { $ } from '@sciter';
+import { $, $$ } from '@sciter';
 
 document.on('input', 'input', (_, textbox) => {
   const { id, value } = textbox;
@@ -6,10 +6,13 @@ document.on('input', 'input', (_, textbox) => {
 });
 
 function convert(id, value) {
+  if ($$('input').find(({ value }) => isNaN(+value))) {
+    return;
+  }
   if (id === 'farenheight') {
-    $('#celsius').value = f2c(value);
+    $('#celsius').value = parseFloat(f2c(value));
   } else {
-    $('#farenheight').value = c2f(value);
+    $('#farenheight').value = parseFloat(c2f(value));
   }
 }
 

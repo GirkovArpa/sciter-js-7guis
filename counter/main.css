@@ -3,7 +3,7 @@
 }
 
 button {
-  width: 3*;
+  width: *;
 }
 
 input {
@@ -11,5 +11,5 @@ input {
 }
 
 input>caption {
-  text-align: right;
+  text-align: left;
 }

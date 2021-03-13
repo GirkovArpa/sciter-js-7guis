@@ -1,0 +1,31 @@
+.container {
+  size: min-content;
+}
+
+select, input, button.book {
+  height: 2em;
+  padding: 0;
+  width: 175px;
+}
+
+select {
+  padding: auto;
+}
+
+option {
+  color: black;
+  background: white;
+}
+
+option:hover {
+  color: white;
+  background: rgb(0, 120, 215);
+}
+
+input:not([disabled]) {
+  color: black;
+}
+
+.ill-formatted {
+  background: red;
+}

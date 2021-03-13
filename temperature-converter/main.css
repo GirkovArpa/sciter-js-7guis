@@ -1,9 +1,9 @@
 .container {
-  width: min-content;
+  width: 300px;
 }
 
 .row {
-  border-spacing: 1em;
+  width: *;
 }
 
 .row>span {
@@ -11,6 +11,8 @@
   white-space: nowrap;
 }
 
-input>caption {
-  text-align: right;
+input {
+  width: *;
+  text-align: left;
+  color: black;
 }
