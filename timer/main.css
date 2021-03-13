@@ -42,10 +42,11 @@ span.progress>label {
 
 [type=hslider] {
   width: *;
-  margin: auto;
-  display: block;
+  height: 3px;
+  border-radius: 5px;
 }
 
 [type=progress] {
  width: 162px;
+ height: 1em;
 }
