@@ -1,1 +1,0 @@
-"scapp.exe" "counter/index.html"

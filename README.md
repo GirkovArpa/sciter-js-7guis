@@ -4,7 +4,7 @@
 
 [7GUIs](https://eugenkiss.github.io/7guis/tasks) benchmarks implemented in [SciterJS](https://sciter.com).
 
-Run the implementations by placing [scapp.exe](https://github.com/c-smile/sciter-js-sdk/tree/main/bin.win/x32) in this folder and running the appropriate `.bat` file.
+Run the implementations by running [scapp.exe](https://github.com/c-smile/sciter-js-sdk/tree/main/bin.win/x32) in each folder.
 
 ## Counter
 

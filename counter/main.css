@@ -1,0 +1,15 @@
+.container {
+  width: 175px;
+}
+
+button {
+  width: 3*;
+}
+
+input {
+  width: 1*;
+}
+
+input>caption {
+  text-align: right;
+}
