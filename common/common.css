@@ -13,13 +13,11 @@ html {
 body {
   size: *;
   margin: 0;
-  align-items: center;
 }
 
 .container {
-  display: inline-block;
   size: max-content;
-  margin: 0 !important;
+  margin: *;
   padding: 1em;
   flow: vertical;
 }
