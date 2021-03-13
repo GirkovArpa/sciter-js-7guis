@@ -2,6 +2,10 @@
   width: 250px;
 }
 
+.row:first-child {
+  flow: horizontal;
+}
+
 .row {
   flow: row(label, input);
   width: *;
@@ -32,6 +36,10 @@ span.progress:last-child {
   width: *;
 }
 
+span.progress>label {
+  width: max-content;
+}
+
 [type=hslider] {
   width: *;
   margin: auto;
@@ -39,5 +47,5 @@ span.progress:last-child {
 }
 
 [type=progress] {
-  width: *;
+ width: 162px;
 }

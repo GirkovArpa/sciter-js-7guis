@@ -20,8 +20,6 @@ Run the implementations by running [scapp.exe](https://github.com/c-smile/sciter
 
 ## Timer
 
-:construction: Work in progress. :construction:
-
 ![screenshot](previews/timer.gif)
 
 ## CRUD

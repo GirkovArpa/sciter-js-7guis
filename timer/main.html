@@ -8,20 +8,23 @@
 
   <body>
     <div .col .container>
-      <div .progress>
+      <div .row>
         <span .progress>
           <label>Elapsed time:</label>
         </span>
         <span .progress>
-          <input type=progress value=30 max=100 />
+          <input type=progress min=0 max=100 value=0 />
         </span>
       </div>
       <div .row .flow>
-        <label>11.8s</label>
+        <label .label>11.8s</label>
       </div>
       <div .row .flow>
         <label>Duration:</label>
-        <input type=hslider min=0 max=30 step=1 value=20 />
+        <input type=hslider min=0 max=30 value=30 />
+      </div>
+      <div .row>
+        <button .reset><span>Reset</span></button>
       </div>
     </div>
   </body>
