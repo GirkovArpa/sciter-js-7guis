@@ -26,10 +26,3 @@ function reset() {
 function mapRange(n, a, b, y, z) {
   return Math.round((n - a) * (z - y) / (b - a) + y);
 }
-
-async function setInterval(callback, milliseconds) {
-  while (true) {
-    await new Promise((resolve) => setTimeout(resolve, milliseconds));
-    callback();
-  }
-}
