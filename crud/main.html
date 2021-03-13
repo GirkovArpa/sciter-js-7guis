@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>CRUD</title>
+    <include src="../common/common.html" media="sciter" />
+  </head>
+
+  <body>
+    <div .col .container>
+      <div .row>
+        <div .col>
+          <div .row>
+            <label for=filter>Filter prefix:</label>
+            <input #filter />
+          </div>
+          <div .row>
+            <select |list>
+              <option>Emil, Hans</option>
+              <option>Mustermann, Max</option>
+              <option selected>Tisch, Roman</option>
+            </select>
+          </div>
+        </div>
+        <div .col .unset-vertical-align>
+          <div .row .space-filler></div>
+          <div .row>
+            <label for=name .wider>Name:</label>
+            <input #name value=John />
+          </div>
+          <div .row>
+            <label for=surname .wider>Surname:</label>
+            <input #surname value=Romba />
+          </div>
+        </div>
+      </div>
+      <div .row .buttons>
+        <button><span>Create</span></button>
+        <button><span>Update</span></button>
+        <button><span>Delete</span></button>
+      </div>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,39 @@
+.container {
+  width: 300px;
+  padding: 0.5em 1em;
+}
+
+label {
+  white-space: nowrap;
+  width: *;
+}
+
+label.wider {
+  width: 0.7*;
+}
+
+input {
+  width: *;
+  height: 1em;
+  color: black;
+}
+
+input, label, option {
+  text-align: left;
+}
+
+select {
+  width: *;
+}
+
+.buttons {
+  border-spacing: 1em;
+}
+
+.space-filler {
+  margin-bottom: 27px;
+}
+
+.unset-vertical-align {
+  vertical-align: unset;
+}
