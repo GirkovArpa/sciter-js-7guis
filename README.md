@@ -8,31 +8,29 @@ Run the implementations by running [scapp.exe](https://github.com/c-smile/sciter
 
 ## Counter
 
-![screenshot](gifs/counter.gif)
+![screenshot](screenshots/counter.gif)
 
 ## Temperature Converter
 
-![screenshot](gifs/temperature-converter.gif)
+![screenshot](screenshots/temperature-converter.gif)
 
 ## Flight Booker
 
-![screenshot](gifs/flight-booker.gif)
+![screenshot](screenshots/flight-booker.gif)
 
 ## Timer
 
-![screenshot](gifs/timer.gif)
+![screenshot](screenshots/timer.gif)
 
 ## CRUD
 
-:construction: Work in progress. :construction:
-
-![screenshot](gifs/crud.png)
+![screenshot](screenshots/crud.gif)
 
 ## Circle Drawer
 
 :construction: Work in progress. :construction:
 
-![screenshot](gifs/circle-drawer.png)
+![screenshot](screenshots/circle-drawer.png)
 
 ## Cells
 

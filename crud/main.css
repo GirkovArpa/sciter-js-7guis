@@ -1,5 +1,8 @@
 .container {
+  margin: 0 auto;
   width: 300px;
+  height: *;
+  min-height: 141px;
   padding: 0.5em 1em;
 }
 
@@ -24,6 +27,7 @@ input, label, option {
 
 select {
   width: *;
+  height: *;
 }
 
 .buttons {
@@ -36,4 +40,9 @@ select {
 
 .unset-vertical-align {
   vertical-align: unset;
+}
+
+.expand-vertically {
+  height: *;
+  max-height: unset;
 }

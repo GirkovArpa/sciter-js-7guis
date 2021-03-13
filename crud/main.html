@@ -8,13 +8,13 @@
 
   <body>
     <div .col .container>
-      <div .row>
+      <div .row .expand-vertically>
         <div .col>
           <div .row>
             <label for=filter>Filter prefix:</label>
             <input #filter />
           </div>
-          <div .row>
+          <div .row .expand-vertically>
             <select |list>
               <option>Emil, Hans</option>
               <option>Mustermann, Max</option>
@@ -35,9 +35,9 @@
         </div>
       </div>
       <div .row .buttons>
-        <button><span>Create</span></button>
-        <button><span>Update</span></button>
-        <button><span>Delete</span></button>
+        <button #create><span>Create</span></button>
+        <button #update><span>Update</span></button>
+        <button #delete><span>Delete</span></button>
       </div>
     </div>
   </body>
