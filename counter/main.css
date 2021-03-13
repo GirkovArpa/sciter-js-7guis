@@ -7,7 +7,7 @@ button {
 }
 
 input {
-  width: 1*;
+  width: *;
 }
 
 input>caption {
