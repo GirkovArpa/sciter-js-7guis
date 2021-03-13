@@ -1,0 +1,43 @@
+.container {
+  width: 250px;
+}
+
+.row {
+  flow: row(label, input);
+  width: *;
+}
+
+.row>label {
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.row>button {
+  width: *;
+}
+
+div.progress {
+  width: *;
+  flow: horizontal;
+  border-spacing: 0.5em;
+}
+
+span.progress {
+  width: max-content;
+  display: block;
+  text-align: left;
+}
+
+span.progress:last-child {
+  width: *;
+}
+
+[type=hslider] {
+  width: *;
+  margin: auto;
+  display: block;
+}
+
+[type=progress] {
+  width: *;
+}

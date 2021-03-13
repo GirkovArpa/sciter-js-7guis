@@ -35,7 +35,7 @@ body {
   border-spacing: 0.5em;
 }
 
-button {
+button:not(.slider) {
   height: *;
 }
 
