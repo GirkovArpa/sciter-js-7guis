@@ -21,12 +21,15 @@ div.row.canvas {
 
 .canvas {
   size: *;
-  position: relative;
 }
 
 svg {
+  size: *;
+  position: relative;
+}
+
+circle {
   position: absolute;
-  background: transparent;
 }
 
 circle:hover {

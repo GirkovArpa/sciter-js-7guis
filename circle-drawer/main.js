@@ -1,30 +1,42 @@
 import { $, $$ } from '@sciter';
+import Action from './action.js';
 
 globalThis.DIALOG = null;
-globalThis.CIRCLE = null
+globalThis.CIRCLE = null;
+globalThis.HISTORY = { UNDO: [], REDO: [] };
 
-$('.canvas').on('click', onCanvasClick);
+$('svg').on('click', onCanvasClick);
+$('#undo').on('click', undoClicked);
+$('#redo').on('click', redoClicked);
 document.on('click', 'circle', onCircleClick);
 document.on('click', 'li', openDialog);
 
-function onCanvasClick({ clientX: mouseX, clientY: mouseY }) {
+function onCanvasClick({ x: cx, y: cy }) {
   if (closeDialog()) return;
   if ($('circle:hover')) return;
-  const { x: canvasX, y: canvasY } = this.getBoundingClientRect();
-  const x = mouseX - canvasX;
-  const y = mouseY - canvasY;
-  const r = 15;
-  const d = r * 2;
+  createCircle(cx, cy);
+}
 
-  const max = 100;
-  const style = `width: ${max}; height: ${max}; left: ${x - (max / 2)}; top: ${y - (max / 2)};`;
-  $('.canvas').append(<svg style={style}>
-    <circle cx={(max / 2) + 0} cy={(max / 2) + 0} r={r - 4} stroke="black" stroke-width="1" fill="transparent" />
-  </svg>);
+function createCircle(cx, cy) {
+  const r = 10;
+  const stroke = 'black';
+  const strokeWidth = 1;
+  const fill = 'transparent';
+  const id = String(Math.random()).replace('.', '');
+  const circle = <circle id={id} cx={cx} cy={cy} r={r} stroke={stroke} stroke-width={strokeWidth} fill={fill} />;
+  $('svg').append(circle);
+  const undo = () => $('#' + id).style.display = 'none';
+  const redo = () => $('#' + id).style.display = 'block';
+  const action = new Action(undo, redo);
+  HISTORY.UNDO.push(action);
+  HISTORY.REDO.length = 0;
+  updateButtons();
 }
 
 function onCircleClick({ clientX: mouseX, clientY: mouseY }, circle) {
   CIRCLE = circle;
+  CIRCLE.rPrev = CIRCLE.attributes.r;
+  circle.classList.add('hover');
   const [windowX, windowY] = Window.this.box('position');
   const x = windowX + mouseX;
   const y = windowY + mouseY;
@@ -46,8 +58,32 @@ function closeDialog() {
   if (DIALOG) {
     DIALOG.close();
     DIALOG = null;
+    const { attributes: { id, r }, rPrev } = CIRCLE;
+    const undo = () => $('#' + id).attributes.r = rPrev;
+    const redo = () => $('#' + id).attributes.r = r;
+    const action = new Action(undo, redo);
+    HISTORY.UNDO.push(action);
+    HISTORY.REDO.length = 0;
+    updateButtons();
     return true;
   } else {
     return false;
   }
+}
+
+function undoClicked() {
+  const { UNDO, REDO } = HISTORY;
+  REDO.push(UNDO.pop().execute());
+  updateButtons();
+}
+
+function redoClicked() {
+  const { UNDO, REDO } = HISTORY;
+  UNDO.push(REDO.pop().execute());
+  updateButtons();
+}
+
+function updateButtons() {
+  $('#undo').state.disabled = !HISTORY.UNDO.length;
+  $('#redo').state.disabled = !HISTORY.REDO.length;
 }

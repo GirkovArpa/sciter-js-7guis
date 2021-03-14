@@ -1,36 +1,32 @@
 # SciterJS 7GUIs
 
-:construction: Work in progress.
-
 [7GUIs](https://eugenkiss.github.io/7guis/tasks) benchmarks implemented in [SciterJS](https://sciter.com).
 
-Run the implementations by running [scapp.exe](https://github.com/c-smile/sciter-js-sdk/tree/main/bin.win/x32) in each folder.
+Run the implementations by running [scapp.exe](https://github.com/c-smile/sciter-js-sdk/blob/main/bin/windows/x64/scapp.exe) in each folder.
 
 ## Counter
 
-![screenshot](screenshots/counter.gif)
+![screenshot](previews/counter.gif)
 
 ## Temperature Converter
 
-![screenshot](screenshots/temperature-converter.gif)
+![screenshot](previews/temperature-converter.gif)
 
 ## Flight Booker
 
-![screenshot](screenshots/flight-booker.gif)
+![screenshot](previews/flight-booker.gif)
 
 ## Timer
 
-![screenshot](screenshots/timer.gif)
+![screenshot](previews/timer.gif)
 
 ## CRUD
 
-![screenshot](screenshots/crud.gif)
+![screenshot](previews/crud.gif)
 
 ## Circle Drawer
 
-:construction: Work in progress. :construction:
-
-![screenshot](screenshots/circle-drawer.png)
+![screenshot](previews/circle-drawer.gif)
 
 ## Cells
 
