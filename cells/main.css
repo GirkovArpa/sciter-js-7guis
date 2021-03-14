@@ -1,0 +1,48 @@
+html {
+  min-width: unset;
+  min-height: unset;
+  overflow: hidden;
+}
+
+body {
+  overflow: hidden;
+}
+
+.container {
+  vertical-align: unset;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-spacing: 1px;
+  background: gray;
+}
+
+thead>tr>th, td:first-child {
+  background: rgb(223, 223, 223);
+  font-weight: bold;
+}
+
+td:first-child {
+  width: 2em;
+}
+
+td {
+  background: white;
+  width: 8em;
+  height: 3em;
+  text-align: left;
+  vertical-align: middle;
+  color: black;
+}
+
+input {
+  width: *;
+  height: 3em;
+  padding: 0 1em;;
+  text-align: left;
+  border: none;
+  outline: none;
+}
