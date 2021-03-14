@@ -1,0 +1,20 @@
+html {
+  background: transparent;
+}
+
+.container {
+  width: 150px;
+  height: 25px;
+  background: rgba(230, 230, 230);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.row {
+  height: *;
+}
+
+span, input {
+  width: *;
+  text-align: center;
+}

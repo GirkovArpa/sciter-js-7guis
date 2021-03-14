@@ -1,0 +1,39 @@
+.container {
+  size: 300px;
+  vertical-align: unset;
+}
+
+.buttons {
+  width: max-content;
+  margin: auto;
+  border-spacing: 1em;
+}
+
+button {
+  height: 1.75em;
+}
+
+div.row.canvas {
+  border: 1px solid black;
+  height: *;
+  max-height: unset;
+}
+
+.canvas {
+  size: *;
+  position: relative;
+}
+
+svg {
+  position: absolute;
+  background: transparent;
+}
+
+circle:hover {
+  fill: gray;
+}
+
+menu > li {
+  padding: 0.5em;
+  height: 0.8em;
+}
