@@ -1,4 +1,4 @@
-# SciterJS 7GUIs
+# Sciter.JS 7GUIs
 
 [7GUIs](https://eugenkiss.github.io/7guis/tasks) benchmarks implemented in [Sciter.JS](https://sciter.com).
 
